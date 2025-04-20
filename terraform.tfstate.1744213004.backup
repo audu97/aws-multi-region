@@ -1,0 +1,46 @@
+{
+  "version": 4,
+  "terraform_version": "1.8.2",
+  "serial": 307,
+  "lineage": "882abedc-c696-adbd-ad37-9269dddf5ffa",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.us-west-rds.module.db_option_group",
+      "mode": "managed",
+      "type": "aws_db_option_group",
+      "name": "this",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:rds:us-west-1:982534361364:og:us-west-rds-20250409122456290000000001",
+            "engine_name": "mysql",
+            "id": "us-west-rds-20250409122456290000000001",
+            "major_engine_version": "5.7",
+            "name": "us-west-rds-20250409122456290000000001",
+            "name_prefix": "us-west-rds-",
+            "option": [],
+            "option_group_description": "us-west-rds option group",
+            "skip_destroy": false,
+            "tags": {
+              "Name": "us-west-rds"
+            },
+            "tags_all": {
+              "Name": "us-west-rds"
+            },
+            "timeouts": {
+              "delete": null
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjo5MDAwMDAwMDAwMDB9fQ==",
+          "create_before_destroy": true
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
