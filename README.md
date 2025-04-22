@@ -78,19 +78,6 @@ This ensures the EC2 instances are launched with the latest Amazon Linux 2 image
 ![multi-region--with-rds](https://github.com/user-attachments/assets/cc4dfa3a-5bba-42d7-b2a8-1ca39db219ec)
 
 
-```
-+------------------------+     +------------------------+
-|      us-east-1        |     |      us-west-1        |
-|------------------------|     |------------------------|
-| VPC (10.0.0.0/16)      |     | VPC (10.0.0.0/16)      |
-|  - Public Subnets      |     |  - Public Subnets      |
-|  - Private Subnets     |     |  - Private Subnets     |
-|  - EC2 Instances       |     |  - EC2 Instances       |
-|  - ALB + TGs           |     |  - ALB + TGs           |
-|  - RDS (private)       |     |  - RDS (private)       |
-+------------------------+     +------------------------+
-```
-
 > Note: EC2 instances use `count` to span multiple AZs and are attached to ALBs using dynamically created attachments.
 
 ---
